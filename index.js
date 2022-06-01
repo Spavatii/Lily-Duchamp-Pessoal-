@@ -5,6 +5,7 @@ const db = new Database;
 const activities_list = require('./src/lily/activities_list.json')
 const type_list = require('./src/lily/type_list.json')
 const images = require('./src/lily/images.json')
+const Discord =  require('discord.js')
 
 db.connect();
 
@@ -28,7 +29,7 @@ const client = new Client({
 setInterval(() => {
     const random = Math.floor(Math.random() * (images.length - 1) + 1); 
     client.user.setAvatar(images[random]); 
-  }, 10800000);
+  }, 3600000);
   setInterval(() => {
     const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); 
     client.user.setActivity(activities_list[index], {type: type_list[index]}); 
