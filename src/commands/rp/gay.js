@@ -59,7 +59,7 @@ module.exports = {
             .setTimestamp()
             .setFooter({ text: `• ... eu tenho até amigos que são!`})
 
-        interaction.reply({ embeds: [embed], components: [button] }).then(() => {
+            interaction.reply({ embeds: [embed], components: [button] }).then(() => {
             const filter = i => i.customId === '1' && i.user.id === user.id;
             const collector = interaction.channel.createMessageComponentCollector({ filter, max: 1 });
 
