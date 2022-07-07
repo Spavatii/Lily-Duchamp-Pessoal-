@@ -6,7 +6,7 @@ class Database {
     }
 
     connect() {
-        const mongo_url = "mongodb+srv://Spavatii:0rJZqYoaiNAZEmD7@cluster0.7ivonzp.mongodb.net/LilyDuchamp?retryWrites=true&w=majority";
+        const mongo_url = "mongodb+srv://Spavatii:xxx@cluster0.7ivonzp.mongodb.net/LilyDuchamp?retryWrites=true&w=majority";
         console.log('Tentando conexão com banco de dados...');
         mongoose.connect(mongo_url, {
             useNewUrlParser: true,
