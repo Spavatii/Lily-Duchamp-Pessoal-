@@ -21,7 +21,7 @@ module.exports = {
             .setImage(`${random1}`)
             .setColor(`#252585`)
             .setTimestamp()
-            .setFooter({ text: `• Boa noite, aproveite para dormir bem... senão... puxarei seu pé!!! Hehehe.! 👻`})
+            .setFooter({ text: `• Boa noite, aproveite para dormir bem... senão... puxarei seu pé!!! Hehehe! 👻`})
 
             interaction.reply({embeds: [embed]});
         },

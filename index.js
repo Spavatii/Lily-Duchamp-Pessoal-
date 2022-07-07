@@ -26,6 +26,8 @@ const client = new Client({
 ['commands', 'aliases'].forEach(f => client[f] = new Collection());
 ['commands', 'events'].forEach(f => require(`./src/handlers/${f}`)(client));
 
+
+
 setInterval(() => {
     const random = Math.floor(Math.random() * (images.length - 1) + 1); 
     client.user.setAvatar(images[random]); 

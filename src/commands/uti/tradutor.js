@@ -22,6 +22,7 @@ module.exports = {
     ],
 
     run: async (client, interaction) => {
+        if (!interaction.member.roles.cache.some(r => r.name === 'Jogador de RPG')) return interaction.reply('Não é destinado para infiéis!')
 
         let pt = interaction.options.getString("pt");
         let en = interaction.options.getString("en");
